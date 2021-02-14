@@ -1,0 +1,170 @@
+/* стили для всего документа */
+body {
+  font-family: Roboto, sans-serif;
+}
+
+/* переменные цвета */
+:root {
+  --white-color: #ffffff;
+  --black-color: #212121;
+  --grey-color: #757575;
+  --blue-color: #2196f3;
+}
+/* logo */
+
+.logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--black-color);
+  text-decoration: none;
+}
+.accent {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--blue-color);
+}
+/* site nav */
+
+.site-nav .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--black-color);
+  text-decoration: none;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--blue-color);
+}
+.site-nav .link.current {
+  color: var(--blue-color);
+}
+.list {
+  list-style: none;
+}
+
+/* Hero */
+
+.hero {
+  background-color: #2f303a;
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  color: var(--white-color);
+}
+.hero-link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  /* text-align: center;
+  color: var(--white-color); */
+  text-decoration: none;
+}
+.button {
+  font-family: inherit;
+  color: var(--white-color);
+  background-color: var(--blue-color);
+}
+
+/* Нащи приемущества */
+
+.section-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.section-name {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--black-color);
+}
+.section-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--grey-color);
+}
+/* Наша команда */
+.comand-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--black-color);
+}
+
+/* Footer */
+.footer {
+  background-color: #2f303a;
+}
+.adress {
+  text-decoration: none;
+}
+.adress-text {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+.logo-footer {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--white-color);
+  text-decoration: none;
+}
+.card-title {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  color: var(--black-color);
+}
+.card-text {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--grey-color);
+}
+/* Кнопки */
+.button-hero {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  text-align: center;
+}
+.button {
+  background-color: #f5f4fa;
+  color: var(--black-color);
+}
+.button:hover {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+}
+.button-primery {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+}
+
+.button .link .current {
+  background-color: 2196f3;
+  color: var(--white-color);
+}
+/* .link-title {
+    text-decoration: none;
+  } */
+.title {
+  text-decoration: none;
+}
