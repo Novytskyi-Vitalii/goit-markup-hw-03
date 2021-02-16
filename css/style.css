@@ -10,6 +10,20 @@ body {
   --grey-color: #757575;
   --blue-color: #2196f3;
 }
+
+/* Контейнер  */
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  border: 1px solid red;
+}
+
+/* Шапка */
+
+.header{
+  display: flex;
+}
+
 /* logo */
 
 .logo {
@@ -51,12 +65,12 @@ body {
 
 .hero {
   background-color: #2f303a;
+  text-align: center;
 }
 .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   color: var(--white-color);
 }
 .hero-link {
@@ -67,7 +81,7 @@ body {
   color: var(--white-color); */
   text-decoration: none;
 }
-.button {
+.button-hero {
   font-family: inherit;
   color: var(--white-color);
   background-color: var(--blue-color);
@@ -146,6 +160,7 @@ body {
   text-align: center;
 }
 .button {
+  font-family: inherit;
   background-color: #f5f4fa;
   color: var(--black-color);
 }
@@ -154,6 +169,7 @@ body {
   color: var(--white-color);
 }
 .button-primery {
+  font-family: inherit;
   background-color: var(--blue-color);
   color: var(--white-color);
 }
