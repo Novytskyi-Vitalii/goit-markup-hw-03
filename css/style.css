@@ -15,7 +15,9 @@ body {
 .container {
   width: 1200px;
   padding: 0 15px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /* Шапка */
@@ -23,6 +25,7 @@ body {
 .header {
   display: flex;
   justify-content: space-between; 
+  height: 80px;
 }
 .container-header {
   display: flex;
@@ -33,17 +36,25 @@ body {
 }
 .site-nav {
   display: flex;
-  justify-content: flex-end;
+
+  /* justify-content: flex-end; */
 }
 .site-nav li {
   margin-left: 50px;
 }
+/* .site.nav {
+  padding-right: 0;
+} */
 .site-contakt {
   display: flex;
+  align-items: center;
 }
 .site-contakt li:last-child {
   margin-left: 50px;
 }
+/* .site-nav > .header-link {
+  margin-left: 93px;
+} */
 /* logo */ 
 
 .logo {
@@ -91,48 +102,65 @@ body {
   color: var(--blue-color);
   padding-left: 93px;
 }
+.list-comand {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
 .list {
   list-style: none;
+  display: flex;
+  text-decoration: none;
+}
+.header-link {
+  padding-left: 0;
 }
 
 /* Hero */
 
 .hero {
+  width: 1200px;
   background-color: #2f303a;
   text-align: center;
+  margin: 0 auto 94px;
+  padding-top: 200px;
+  padding-bottom: 280px;
 }
 .hero-title {
-  padding-top: 200px;
   width: 696px;
-  margin: 0 auto;
-  margin-bottom: 30px;
+  margin: 0 auto 40px;
+  /* padding-bottom: 30px; */
  
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
 }
 .hero-link {
-  margin: 0 auto; 
-  width: 200px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  color: var(--white-color);
-}
-  /* Кнопка героя */
-
-.button-hero {
-  background-color: var(--blue-color);
-  color: var(--white-color);
+  display: inline-flex
+  align-items: center;
+  text-align: center; */
+  letter-spacing: 0.06em;
+  padding: 10px 32px;
   text-decoration: none;
-  border: 1px solid var(--blue-color);
+}
+.button-hero {
+  font-family: inherit;
+  color: var(--white-color);
+  background-color: var(--blue-color);
+  border: 1px solid var(--blue-color)
+  width: 200px;
+  height: 50px;
   border-radius: 4px;
+  /* margin-bottom: 200px; */
 }
+/* .hero-link .button-hero {
+  margin-bottom: 200px;
+} */
 
-}
 /* Нащи приемущества */
 
 .section-title {
@@ -141,41 +169,128 @@ body {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  margin: 0;
+}
+.list-product {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  margin: 0 0 94px;
+  padding-left: 0;
+  width: 1170px;
 }
 .section-name {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   color: var(--black-color);
+  margin-top: 0;
+  margin-bottom: 10px;
+  width: 270px;
+  /* width: calc((100% - 30px) / 4); */
 }
 .section-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   color: var(--grey-color);
+  margin-top: 0px;
+  width: 270px;
+   /* width: calc((100% - 30px) / 4); */
 }
+.list-about {
+  display: flex;
+  width: 270px;
+  /* width: calc((100% - 30px) / 4); */
+}
+/* Чем занимаемся */
+.section-image {
+  display: flex;  
+  margin: 0 auto 50px;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+}
+.list-image {
+  display: flex;
+  padding-left: 0;
+  justify-content: space-between;
+  margin-bottom: 94px;
+}
+/* .list-comand {
+  text-decoration: none;
+}
+.content-image {
+  text-decoration: none;
+} */
+/* .content-image {
+  text-decoration: none;
+} */
+
 /* Наша команда */
+.comand {
+  display: flex;
+  width: 1200px;
+  background-color: #F5F4FA;
+  margin: 0 auto;
+  /* justify-content: space-between; */
+}
+.comand-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
 .comand-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   color: var(--black-color);
+  text-align: center;
+}
+.list-comand {
+  display: flex;
+}
+.comand-image {
+  width: 270px;
+  justify-content: space-between;
+}
+.comand-text{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--grey-color);
+  margin-top: 0px;
+  width: 270px;
+  text-align: center;
 }
 
 /* Footer */
 .footer {
+  width: 1200px;
   background-color: #2f303a;
+  padding-top: 60px;
+  margin: 0 auto;
 }
 .adress {
   text-decoration: none;
+  /* margin-bottom: 60px; */
+  padding-bottom: 60px;
 }
 .adress-text {
+  display: flex;
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+  margin-bottom: 9px;
 }
 .logo-footer {
   font-family: Raleway;
@@ -184,6 +299,9 @@ body {
   line-height: 1.19;
   color: var(--white-color);
   text-decoration: none;
+  /* margin-top: 60px; */
+  margin-bottom: 9px;
+  display: flex;
 }
 .card-title {
   font-family: Roboto;
@@ -199,12 +317,21 @@ body {
   line-height: 1.87;
   color: var(--grey-color);
 }
-
-/* Кнопки фільтра Портфоліо */
+/* Кнопки */
+.button-hero {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  text-align: center;
+}
 .button {
   font-family: inherit;
   background-color: #f5f4fa;
   color: var(--black-color);
+  width: 145px;
+  height: 38px;
+  background: #F5F4FA;
+  border-radius: 4px;
+  margin: 5px;
 }
 .button:hover {
   background-color: var(--blue-color);
@@ -214,6 +341,10 @@ body {
   font-family: inherit;
   background-color: var(--blue-color);
   color: var(--white-color);
+  width: 145px;
+  height: 38px;
+  border-radius: 4px;
+  margin: 5px;
 }
 
 .button .link .current {
@@ -225,4 +356,38 @@ body {
   } */
 .title {
   text-decoration: none;
+}
+/* Фильтр */
+.filter {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--black-color);
+  text-decoration: none;
+  margin-top: 94px;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+/* Набор карток */
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--black-color);
+  text-decoration: none;
+  margin: 0;
+  margin-bottom: 94px;
+  padding: 0;
+  list-style: none;
+  justify-content: space-between;
+  /* width: 1200px; */
+  /* margin: 0 auto;
+  padding-left: 0;
+} */
+
+.card-set >.item {
+  flex-basis: calc (100% / 3);
 }

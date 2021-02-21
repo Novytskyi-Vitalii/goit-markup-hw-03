@@ -8,14 +8,15 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <!--Шапка-->
     <div class="container">
-        <header>
-            <nav>
+        <header class="header">
+            <nav class="header-nav">
                 <a class="logo" href="./"> <span class="accent"> Web</span>Studio </a>
 
                 <ul class="site-nav list">
@@ -24,7 +25,7 @@
                     <li><a href="#" class="link">Контакты</a></li>
                 </ul>
             </nav>
-            <ul class="site-nav list">
+            <ul class="site-contakt list">
                 <li>
                     <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
@@ -34,10 +35,9 @@
             </ul>
         </header>
     </div>
-
     <main>
         <!-- Фильтр -->
-        <ul class="site-nav list container">
+        <ul class="filter list container">
             <button type="button" class="current button-primery">Все</button>
             <button type="button" class="button">Веб сайты</button>
             <button type="button" class="button">Приложения</button>
@@ -46,14 +46,15 @@
         </ul>
         <!--Набор карочек-->
         <div class="container">
-            <ul class="site-nav list">
-                <li>
+            <ul class="card-set">
+                <li class="item">
                     <a class="title" href="">
                         <img src="./images/img11.jpg" alt="" width="370">
                         <h2 class="card-title">Технокряк</h2>
                         <p class="card-text">Веб-сайт</p>
                     </a>
                 </li>
+
                 <li>
                     <a class="title" href="">
                         <img src="./images/img-222.jpg" alt="" width="370">
@@ -61,6 +62,7 @@
                         <p class="card-text">Дизайн</p>
                     </a>
                 </li>
+
                 <li>
                     <a class="title" href="">
                         <img src="./images/img-333.jpg" alt="" width="370">
@@ -68,6 +70,7 @@
                         <p class="card-text">Приложение</p>
                     </a>
                 </li>
+
                 <li>
                     <a class="title" href="">
                         <img src="./images/img-4.jpg" alt="" width="370">
@@ -75,6 +78,7 @@
                         <p class="card-text">Маркетинг</p>
                     </a>
                 </li>
+
                 <li>
                     <a class="title" href="">
                         <img src="./images/img-5.jpg" alt="" width="370">
@@ -82,6 +86,7 @@
                         <p class="card-text">Приложение</p>
                     </a>
                 </li>
+
                 <li>
                     <a class="title" href="">
                         <img src="./images/img-6.jpg" alt="" width="370">
@@ -89,6 +94,7 @@
                         <p class="card-text">Веб-сайт</p>
                     </a>
                 </li>
+
                 <li>
                     <a class="title" href="">
                         <img src="./images/img-7.jpg" alt="" width="370">
@@ -103,6 +109,7 @@
                         <p class="card-text">Маркетинг</p>
                     </a>
                 </li>
+
                 <li>
                     <a class="title" href="">
                         <img src="./images/img-9.jpg" alt="" width="370">
@@ -112,20 +119,18 @@
                 </li>
             </ul>
         </div>
-
     </main>
     <!--Подвал-->
-    <div class="container">
-        <footer class="footer">
+    <footer class="footer">
+        <div class="container">
             <a class="logo-footer" href="./"> <span class="accent"> Web</span>Studio </a>
             <address class="adress">
                 <a class="adress-text" href="#">г. Киев, пр-т Леси Украинки, 26</a>
                 <a class="adress-text" href="#">info@example.com</a>
                 <a class="adress-text" href="#">+38 099 111 11 11</a>
             </address>
-        </footer>
-    </div>
-
+        </div>
+    </footer>
 </body>
 
 </html>
