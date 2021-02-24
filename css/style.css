@@ -1,8 +1,11 @@
 /* стили для всего документа */
 body {
   font-family: Roboto, sans-serif;
+  margin: 0;
 }
-
+p, h1, h2, h3 {
+  margin: 0;
+}
 /* переменные цвета */
 :root {
   --white-color: #ffffff;
@@ -119,7 +122,6 @@ body {
 /* Hero */
 
 .hero {
-  width: 1200px;
   background-color: #2f303a;
   text-align: center;
   margin: 0 auto 94px;
@@ -140,21 +142,20 @@ body {
   color: var(--white-color);
 }
 .hero-link {
-  display: inline-flex
-  align-items: center;
-  text-align: center; */
-  letter-spacing: 0.06em;
+  display: block;
+  /* align-items: center; */
+  /* text-align: center; */
+  border-radius: 4px;
   padding: 10px 32px;
   text-decoration: none;
-}
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+} 
 .button-hero {
   font-family: inherit;
   color: var(--white-color);
   background-color: var(--blue-color);
-  border: 1px solid var(--blue-color)
-  width: 200px;
-  height: 50px;
-  border-radius: 4px;
   /* margin-bottom: 200px; */
 }
 /* .hero-link .button-hero {
@@ -175,9 +176,8 @@ body {
   display: flex;
   list-style: none;
   justify-content: space-between;
-  margin: 0 0 94px;
+  /* margin: 0 0 94px; */
   padding-left: 0;
-  width: 1170px;
 }
 .section-name {
   font-weight: 700;
@@ -196,6 +196,7 @@ body {
   color: var(--grey-color);
   margin-top: 0px;
   width: 270px;
+  padding-right: 30px;
    /* width: calc((100% - 30px) / 4); */
 }
 .list-about {
@@ -218,6 +219,7 @@ body {
   padding-left: 0;
   justify-content: space-between;
   margin-bottom: 94px;
+  list-style: none;
 }
 /* .list-comand {
   text-decoration: none;
@@ -371,23 +373,40 @@ body {
 
 /* Набор карток */
 .card-set {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 94px;
+
   display: flex;
   flex-wrap: wrap;
+  /* flex-basis: calc(100% / 3 - 20px); */
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   color: var(--black-color);
   text-decoration: none;
-  margin: 0;
-  margin-bottom: 94px;
-  padding: 0;
-  list-style: none;
-  justify-content: space-between;
-  /* width: 1200px; */
+/* 
+  margin-left: -30px;
+  margin-top: -30px;
+  padding: 0; */
+  
+}
+.item {
+margin-right: 30px;
+}
+.item:nth-child(3n + 3) {
+  margin-right: 0;
+}
+  
+/* .item {
+  margin-right: 30px;
+} */
+  /* justify-content: space-between; */
   /* margin: 0 auto;
   padding-left: 0;
 } */
 
-.card-set >.item {
-  flex-basis: calc (100% / 3);
-}
+/* .card-set > .item {
+  flex-basis: calc (100% / 3) - 60px);
+} */
