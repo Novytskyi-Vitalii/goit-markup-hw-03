@@ -156,6 +156,7 @@ p, h1, h2, h3 {
   font-family: inherit;
   color: var(--white-color);
   background-color: var(--blue-color);
+  
   /* margin-bottom: 200px; */
 }
 /* .hero-link .button-hero {
