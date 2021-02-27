@@ -1,10 +1,18 @@
 /* стили для всего документа */
-body {
+body ::before
+::after {
   font-family: Roboto, sans-serif;
+  padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 p, h1, h2, h3 {
   margin: 0;
+}
+img {
+  display: block;
+  min-width: 100%;
+  height: auto;
 }
 /* переменные цвета */
 :root {
@@ -18,7 +26,7 @@ p, h1, h2, h3 {
 .container {
   width: 1200px;
   padding: 0 15px;
-  /* border: 1px solid red; */
+  border: 1px solid red;
   margin-right: auto;
   margin-left: auto;
 }
@@ -105,11 +113,6 @@ p, h1, h2, h3 {
   color: var(--blue-color);
   padding-left: 93px;
 }
-.list-comand {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-}
 .list {
   list-style: none;
   display: flex;
@@ -124,9 +127,9 @@ p, h1, h2, h3 {
 .hero {
   background-color: #2f303a;
   text-align: center;
-  margin: 0 auto 94px;
+  /* margin: 0 auto 94px; */
   padding-top: 200px;
-  padding-bottom: 280px;
+  padding-bottom: 200px;
 }
 .hero-title {
   width: 696px;
@@ -165,6 +168,11 @@ p, h1, h2, h3 {
 
 /* Нащи приемущества */
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .section-title {
   font-style: normal;
   font-weight: 700;
@@ -179,6 +187,9 @@ p, h1, h2, h3 {
   justify-content: space-between;
   /* margin: 0 0 94px; */
   padding-left: 0;
+}
+.section-item {
+  margin-right: 30px;
 }
 .section-name {
   font-weight: 700;
@@ -197,7 +208,6 @@ p, h1, h2, h3 {
   color: var(--grey-color);
   margin-top: 0px;
   width: 270px;
-  padding-right: 30px;
    /* width: calc((100% - 30px) / 4); */
 }
 .list-about {
@@ -206,6 +216,9 @@ p, h1, h2, h3 {
   /* width: calc((100% - 30px) / 4); */
 }
 /* Чем занимаемся */
+.about {
+  padding-bottom: 94px;
+}
 .section-image {
   display: flex;  
   margin: 0 auto 50px;
@@ -219,9 +232,19 @@ p, h1, h2, h3 {
   display: flex;
   padding-left: 0;
   justify-content: space-between;
-  margin-bottom: 94px;
   list-style: none;
+  width: calc((100% - 30px) / 3);
 }
+.content-image {
+  margin-right: 30px;
+}
+.content-image:nth-child(3n + 3) {
+  margin-right: 0;
+}
+
+/* .list-image::nth-child(3n + 3) {
+  margin-right: 0;
+} */
 /* .list-comand {
   text-decoration: none;
 }
@@ -233,9 +256,11 @@ p, h1, h2, h3 {
 } */
 
 /* Наша команда */
+
 .comand {
   display: flex;
-  width: 1200px;
+  /* width: 1200px; */
+  max-width: 100%;
   background-color: #F5F4FA;
   margin: 0 auto;
   /* justify-content: space-between; */
@@ -257,11 +282,25 @@ p, h1, h2, h3 {
   text-align: center;
 }
 .list-comand {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  /* max-width: 100%; */
+}
+.comand >.list-comand {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   display: flex;
 }
+}
+.list-comand >.comand-image {
+  /* flex-basis: calc(100% / 4 - 90px); */
+}
 .comand-image {
-  width: 270px;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  outline: 1px solid green;
 }
 .comand-text{
   font-weight: 400;
