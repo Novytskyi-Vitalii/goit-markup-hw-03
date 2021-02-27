@@ -26,7 +26,7 @@ img {
 .container {
   width: 1200px;
   padding: 0 15px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin-right: auto;
   margin-left: auto;
 }
@@ -285,6 +285,8 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
+
+  flex-basis: calc(100% / 4);
   display: flex;
   /* max-width: 100%; */
 }
@@ -351,6 +353,8 @@ img {
   font-size: 18px;
   line-height: 2;
   color: var(--black-color);
+  padding-top: 20px;
+  padding-bottom: 4px;
 }
 .card-text {
   font-family: Roboto;
@@ -358,6 +362,7 @@ img {
   font-size: 16px;
   line-height: 1.87;
   color: var(--grey-color);
+  padding-bottom: 20px;
 }
 /* Кнопки */
 .button-hero {
@@ -373,7 +378,7 @@ img {
   height: 38px;
   background: #F5F4FA;
   border-radius: 4px;
-  margin: 5px;
+  /* margin: 5px; */
 }
 .button:hover {
   background-color: var(--blue-color);
@@ -386,7 +391,7 @@ img {
   width: 145px;
   height: 38px;
   border-radius: 4px;
-  margin: 5px;
+  /* margin: 5px; */
 }
 
 .button .link .current {
@@ -406,20 +411,27 @@ img {
   line-height: 1.14;
   color: var(--black-color);
   text-decoration: none;
-  margin-top: 94px;
+  /* margin-top: 94px; */
+  margin-top: 0;
+  padding-top: 94px;
   margin-bottom: 50px;
   justify-content: center;
+} 
+.filter-btn {
+  margin-right: 8px;
 }
-
+.filter-btn: :last-child {
+  margin-right: 0px;
+}
 /* Набор карток */
 .card-set {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-bottom: 94px;
-
+  flex-basis: calc(100% / 3);
   display: flex;
   flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   /* flex-basis: calc(100% / 3 - 20px); */
   font-weight: 500;
   font-size: 14px;
@@ -434,11 +446,15 @@ img {
 }
 .item {
 margin-right: 30px;
+/* flex-basis: calc(100% / 3); */
 }
 .item:nth-child(3n + 3) {
-  margin-right: 0;
+  margin: 0;
 }
-  
+.
+/* .item:nth-child(3n + 3) {
+  margin-right: 0;
+} */
 /* .item {
   margin-right: 30px;
 } */
