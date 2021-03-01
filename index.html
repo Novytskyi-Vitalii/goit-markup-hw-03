@@ -16,8 +16,8 @@
 <body>
     <!--Шапка-->
 
-    <div class="container">
-        <header class="header">
+    <header class="header">
+        <div class="container">
             <nav class="header-nav">
                 <a class="logo" href="./"> <span class="accent"> Web</span>Studio </a>
 
@@ -35,8 +35,9 @@
                     <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
                 </li>
             </ul>
-        </header>
-    </div>
+        </div>
+    </header>
+
 
     <main>
         <!--Hero-->
@@ -105,39 +106,45 @@
                     <li class="comand-image">
                         <article class="card">
                             <div class="card-thumb">
-                                <img src="images/img-11.jpg" alt="" width="">
+                                <img src="images/img-11.jpg" alt="фото мужчины">
                             </div>
-                            <!-- <div> -->
-                            <h3 class="comand-name">Игорь Демьяненко</h3>
-                            <p class="comand-text">Product Designer</p>
-                            <!-- </div> -->
+                            <div class="comand-info">
+                                <h3 class="comand-name">Игорь Демьяненко</h3>
+                                <p class="comand-text">Product Designer</p>
+                            </div>
                         </article>
                     </li>
                     <li class="comand-image">
                         <article class="card">
                             <div class="card-thumb">
-                                <img src="images/img-22.jpg" alt="" width="">
+                                <img src="images/img-22.jpg" alt="фото девушки">
                             </div>
-                            <h3 class="comand-name">Ольга Репина</h3>
-                            <p class="comand-text">Frontend Developer</p>
+                            <div class="comand-info">
+                                <h3 class="comand-name">Ольга Репина</h3>
+                                <p class="comand-text">Frontend Developer</p>
+                            </div>
                         </article>
                     </li>
                     <li class="comand-image">
                         <article class="card">
                             <div class="card-thumb">
-                                <img src="images/img-33.jpg" alt="" width="">
+                                <img src="images/img-33.jpg" alt="фото мужчины">
                             </div>
-                            <h3 class="comand-name">Николай Тарасов</h3>
-                            <p class="comand-text">Marketing</p>
+                            <div class="comand-info">
+                                <h3 class="comand-name">Николай Тарасов</h3>
+                                <p class="comand-text">Marketing</p>
+                            </div>
                         </article>
                     </li>
                     <li class="comand-image">
                         <article class="card">
                             <div class="card-thumb">
-                                <img src="images/img-44.jpg" alt="" width="">
+                                <img src="images/img-44.jpg" alt="фото мужчины">
                             </div>
-                            <h3 class="comand-name">Михаил Ермаков</h3>
-                            <p class="comand-text">UI Designer</p>
+                            <div class="comand-info">
+                                <h3 class="comand-name">Михаил Ермаков</h3>
+                                <p class="comand-text">UI Designer</p>
+                            </div>
                         </article>
                     </li>
                 </ul>
@@ -150,9 +157,17 @@
         <div class="container">
             <a class="logo-footer" href="./"> <span class="accent"> Web</span>Studio </a>
             <address class="adress">
-                <a class="adress-text" href="#">г. Киев, пр-т Леси Украинки, 26</a>
-                <a class="adress-text" href="#">info@example.com</a>
-                <a class="adress-text" href="#">+38 099 111 11 11</a>
+                <ul class="adress-list">
+                    <li class="adress-link">
+                        <a class="adress-text" href="#">г. Киев, пр-т Леси Украинки, 26</a>
+                    </li>
+                    <li>
+                        <a class="adress-text" href="#">info@example.com</a>
+                    </li>
+                    <li>
+                        <a class="adress-text" href="#">+38 099 111 11 11</a>
+                    </li>
+                </ul>
             </address>
         </div>
     </footer>
