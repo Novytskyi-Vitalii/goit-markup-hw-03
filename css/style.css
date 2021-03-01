@@ -273,16 +273,16 @@ img {
 /* Наша команда */
 
 .comand {
-  display: flex;
+  /* display: flex; */
   /* width: 1200px;
   max-width: 100%; */
   background-color: #F5F4FA;
   margin: 0 auto;
+  padding-bottom: 94px;
   /* justify-content: space-between; */
 }
 .comand-image {
-  display: block;
-  min-width: 100%;
+  margin-right: 30px;
 }
 .comand-title {
   font-style: normal;
@@ -290,8 +290,8 @@ img {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  margin-top: 94px;
-  margin-bottom: 50px;
+  padding-top: 94px;
+  padding-bottom: 50px;
 }
 .comand-name {
   font-weight: 500;
@@ -299,6 +299,7 @@ img {
   line-height: 1.19;
   color: var(--black-color);
   text-align: center;
+  padding-top: 30px;
 }
 .list-comand {
   margin: 0;
@@ -316,7 +317,7 @@ img {
 }
 
 .list-comand >.comand-image {
-  outline: 1px solid green;
+  /* outline: 1px solid green; */
   /* flex-basis: calc(100% / 4); */
 }
 .comand-text{
@@ -327,6 +328,7 @@ img {
   margin-top: 0px;
   width: 270px;
   text-align: center;
+  padding-bottom: 30px;
 }
 
 /* Footer */
@@ -361,6 +363,9 @@ img {
   /* margin-top: 60px; */
   margin-bottom: 9px;
   display: flex;
+}
+.card {
+  background-color: var(--white-color);
 }
 .card-title {
   font-family: Roboto;
@@ -464,10 +469,10 @@ img {
 .item {
 margin-right: 30px;
 margin-bottom: 30px;
+
 /* flex-basis: calc(100% / 3); */
 }
 .item * {
-  /* outline: 1px solid tomato; */
 }
 .item:nth-child(3n + 3) {
   margin: 0;
@@ -477,6 +482,7 @@ margin-bottom: 30px;
 }
 .portfolio-text { 
 padding-right: 20px;
+border-bottom: 1px solid #EEEEEE;
 }
 /* .item:nth-child(3n + 3) {
   margin-right: 0;
