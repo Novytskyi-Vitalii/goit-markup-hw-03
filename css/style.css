@@ -40,6 +40,7 @@ img {
   display: flex;
   justify-content: space-between; 
   height: 80px;
+  border-bottom: 1px solid #ECECEC;
 }
 .container-header {
   display: flex;
