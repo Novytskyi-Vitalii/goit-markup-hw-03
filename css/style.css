@@ -17,6 +17,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+button {
+  outline: none;
+}
 /* переменные цвета */
 :root {
   --white-color: #ffffff;
@@ -39,7 +42,8 @@ img {
 .header {
   display: flex;
   /* justify-content: flex-end;  */
-  height: 80px;
+  padding-top: 32px;
+  padding-bottom: 31px;
   border-bottom: 1px solid #ECECEC;
 }
 .header >.container {
@@ -307,7 +311,7 @@ img {
   line-height: 1.19;
   color: var(--black-color);
   text-align: center;
-  margin: 10px;
+  margin-bottom: 10px;
 }
 .list-comand {
   margin: 0;
@@ -340,7 +344,7 @@ img {
 
 /* Footer */
 .footer {
-  width: 1200px;
+  /* width: 1200px; */
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -387,9 +391,7 @@ img {
   font-size: 18px;
   line-height: 2;
   color: var(--black-color);
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-bottom: 4px;
+  margin-bottom: 4px;
 }
 .card-text {
   font-family: Roboto;
@@ -397,8 +399,6 @@ img {
   font-size: 16px;
   line-height: 1.87;
   color: var(--grey-color);
-  padding-bottom: 20px;
-  padding-left: 20px;
 }
 /* Кнопки */
 .button-hero {
@@ -502,6 +502,9 @@ flex-basis: calc(100% / 3);
 }
 .portfolio-text { 
 padding-right: 20px;
+padding-left: 24px;
+padding-top: 20px;
+padding-bottom: 20px;
 /* border-bottom: 1px solid #EEEEEE; */
 }
 /* .item:nth-child(3n + 3) {
