@@ -296,6 +296,10 @@ button {
 .comand-image {
   margin-right: 30px;
 }
+.comand-image:last-child {
+  margin-right: 0;
+}
+
 .comand-title {
   font-style: normal;
   font-weight: 700;
